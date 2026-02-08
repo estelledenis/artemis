@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Artemis Station - Maintenance Logs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/life_support.css') }}">
+</head>
+<body class="life-support-body">
+    <div class="terminal-container">
+        <div class="status-bar">
+            <span class="status-item alert-status">OXYGEN LEVEL: 18% (CRITICAL)</span>
+            <span class="status-item alert-status">TEMP: UNSTABLE</span>
+            <span class="status-item alert-status">STATUS: EMERGENCY</span>
+        </div>
+
+        <h1 class="warning-title">MAINTENANCE LOGS<span class="cursor">_</span></h1>
+        
+        {% if logs %}
+            <div class="logs-container">
+                {% for log in logs %}
+                    <div class="log-entry">
+                        <p class="log-header"><strong>{{ log['timestamp'] }}</strong> - {{ log['user_name'] }}</p>
+                        <p class="log-message">{{ log['log_entry'] | safe }}</p>
+                        <p class="log-status"><em>Status: {{ log['status'] }}</em></p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>No maintenance logs submitted yet.</p>
+        {% endif %}
+
+        <br>
+        <a href="/life_support" class="view-logs-link">Back to Life Support</a>
+    </div>
+</body>
+</html>
