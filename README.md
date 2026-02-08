@@ -85,10 +85,10 @@ How to set up and run this specific challenge:
 - UNION queries let you combine results from different tables, but the column counts must match.
 
 **Locked State:**
-![Docking Bay - Locked](static/images/docking_bay_locked.png)
+![Docking Bay - Locked](static/images/docking_bay_locked.jpeg)
 
 **Access Granted:**
-![Docking Bay - Access Granted](static/images/docking_bay_success.png)
+![Docking Bay - Access Granted](static/images/docking_bay_open.jpeg)
 
 ### Learning Resources
 https://owasp.org/www-community/attacks/SQL_Injection
