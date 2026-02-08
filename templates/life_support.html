@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Artemis Station - Life Support</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/life_support.css') }}">
+</head>
+<body class="life-support-body">
+    <div class="view-logs-panel">
+        <a href="/view_logs" class="view-logs-link">View Maintenance Logs</a>
+    </div>
+    <div class="terminal-container">
+        <div class="status-bar">
+            <span class="status-item alert-status">OXYGEN LEVEL: 18% (CRITICAL)</span>
+            <span class="status-item alert-status">TEMP: UNSTABLE</span>
+            <span class="status-item alert-status">STATUS: EMERGENCY</span>
+        </div>
+
+        <h1 class="warning-title">MAINTENANCE LOG SYSTEM<span class="cursor"></span></h1>
+        <p>Admin controls locked. Submit maintenance reports for review:</p>
+ 
+            <form method="POST" action="/submit_log">
+                <input type="text" name="user_name" placeholder="Name:" required>
+                <textarea name="log_entry" placeholder="Create log entry:" rows="4" required></textarea>
+                <button type="submit">Submit Report</button>
+            </form>
+            <br>
+        </div>
+</body>
+</html>

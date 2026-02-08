@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Artemis Station - Docking Bay<span class="cursor"></span></title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="terminal-container">
+    <div class="access-code-panel">
+        <form method="POST" action="/verify_access">
+            <label for="access_code">DOCK ACCESS CODE:</label>
+            <input type="text" name="access_code" id="access_code" placeholder="Enter code">
+        </form>
+    </div>
+    <div class="status-bar">
+        <span class="status-item">[STATUS: LOCKED]</span>
+        <span class="status-item">[ACCESS: DENIED]</span>
+    </div>
+
+    <h1>ARTEMIS STATION DOCKING BAY</h1>
+    <p>Access Terminal - Crew Manifest Search</p>
+    
+    <form method="POST" action="/search">
+        <input type="text" name="crew_members" placeholder="Enter crew member name">
+        <button type="submit">Search</button>
+    </form>
+</div>
+</body>
+</html>
