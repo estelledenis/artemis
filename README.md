@@ -84,6 +84,12 @@ How to set up and run this specific challenge:
 - Database systems often have metadata tables that list all tables in the database.
 - UNION queries let you combine results from different tables, but the column counts must match.
 
+**Locked State:**
+![Docking Bay Locked](images/docking_bay_locked.png)
+
+**Access Granted:**
+![Docking Bay Success](images/docking_bay_success.png)
+
 ### Learning Resources
 https://owasp.org/www-community/attacks/SQL_Injection
 https://portswigger.net/web-security/learning-paths/sql-injection
