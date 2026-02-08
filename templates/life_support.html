@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/life_support.css') }}">
 </head>
 <body class="life-support-body">
+    <div class="'access-code-panel">
+        <form method="POST" action="verify_life_support">
+            <label for="access_code">LIFE SUPPORT ACCESS CODE:</label>
+            <input type="text" name="access_code" id="life-support-code" placeholder="Enter code">
+        </form>
+    </div>
     <div class="view-logs-panel">
         <a href="/view_logs" class="view-logs-link">View Maintenance Logs</a>
     </div>

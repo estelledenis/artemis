@@ -1,5 +1,5 @@
 import sqlite3
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, make_response
 
 app = Flask(__name__)
 
@@ -75,6 +75,27 @@ def view_logs():
     connection.close()
 
     return render_template('view_logs.html', logs=logs)
+
+@app.route('/admin_panel')
+def admin_panel():
+    connection = sqlite3.connect('artemis.db')
+    connection.row_factory = sqlite3.Row
+    cursor = connection.cursor()
+    cursor.execute('SELECT * FROM maintenance_logs WHERE status = "pending" ORDER BY timestamp DESC')
+    logs = cursor.fetchall()
+    connection.close()
+
+    response = make_response(render_template('admin_panel.html', logs=logs))
+    response.set_cookie('admin_token', 'ARTEMIS{LIFE-SUPPORT-OMEGA}')
+    return response
+
+@app.route('/verify_life_support', methods=['POST'])
+def verify_life_support():
+    token = request.form['access_code']
+    if token == 'ARTEMIS{LIFE-SUPPORT-OMEGA}':
+        return render_template('life_support_success.html')
+    else:
+        return render_template('life_support.html', error='Invalid token.')
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Panel - Life Support</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/admin_panel.css') }}">
+    </head>
+    <body class="life-support-body">
+        <div class="terminal-container">
+            <div class="status-bar">
+                <span class="status-item alert-status">OXYGEN LEVEL: 18% (CRITICAL)</span>
+                <span class="status-item alert-status">TEMP: UNSTABLE</span>
+                <span class="status-item alert-status">STATUS: EMERGENCY</span>
+            </div>
+
+            <h1 class="warning-title">ADMIN PANEL<span class="cursor"></span></h1>
+            <p>Reviewing pending maintenance reports...</p>
+
+            <div class="admin-logs-container">
+                {% if logs %}
+                    {% for log in logs %}
+                        <div class="admin-log-entry">
+                            <p class="log-header"><strong>{{ log['timestamp'] }}</strong> - {{ log['user_name'] }}</p>
+                            <p class="log-message">{{ log['log_entry'] | safe }}</p>
+                            <p class="log-status"><em>Status: {{ log['status'] }}</em></p>
+            </div>
+                    {% endfor %}
+                {% else %}
+                    <p>No pending maintenance reports.</p>
+                {% endif %}
+                <br>
+                <a href="/life_support" class="view-logs-link">Back to Life Support</a>
+            </div>
+        </div>
+    </body>
+</html>

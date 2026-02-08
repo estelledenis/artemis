@@ -132,8 +132,45 @@ button:hover {
     color: #ff9500
 }
 
-.view-logs-panel {
+.access-code-panel {
     position: absolute;
     top: 20px;
     right: 20px;
+    padding: 0;
+    background-color: transparent;
+    font-size: 11px;
+}
+
+.view-logs-panel {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+
+.access-code-panel form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.access-code-panel label {
+    margin: 0;
+    color: #ff9500;
+    white-space: nowrap;
+}
+
+.access-code-panel form input[type="text"] {
+    width: 120px;
+    max-width: 120px;
+    padding: 5px;
+    margin: 0;
+    font-size: 11px;
+    box-shadow: 0 0 10px #ff4444;
+}
+
+#life-support-code {
+    width: 150px !important;
+    padding: 5px !important;
+    margin: 0 !important;
+    font-size: 11px !important;
 }

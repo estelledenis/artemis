@@ -1,0 +1,29 @@
+.success-body {
+    background-image: url('/static/images/life_support_success.png') !important;
+}
+
+.success-status {
+    color: #00ff41;
+    border-color: #00ff41;
+    background-color: rgba(0, 255, 65, 0.1);
+}
+
+.success-title {
+    color: #00ff41;
+    text-shadow: 0 0 10px #00ff41,
+                 0 0 20px #00ff41;
+}
+
+.success-message {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: transparent;
+    color: #00ff41;
+    border: none;
+}
+
+.success-message p {
+    color: #00ff41;
+    margin: 10px 0;
+    font-size: 16px;
+}
