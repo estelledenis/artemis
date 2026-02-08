@@ -152,7 +152,6 @@ Multi-stage Integration Challenge
 
 ## Technical Stack
 
-List all technologies:
 - Python 3.x
 - Flask
 - SQLite
@@ -194,7 +193,7 @@ Your development timeline:
 
 ## Learning Journey
 
-What you learned/are learning building this
+What was learned building this
 
 ## Contributing / Feedback
 
@@ -202,12 +201,4 @@ How people can provide feedback
 
 ## Author
 
-Your name, link to LinkedIn/portfolio
-
-## License
-
-MIT or whatever you choose
-
-## Acknowledgments
-
-Resources that helped you# artemis
+Estelle Denis
