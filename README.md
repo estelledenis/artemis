@@ -84,10 +84,9 @@ How to set up and run this specific challenge:
 - Database systems often have metadata tables that list all tables in the database.
 - UNION queries let you combine results from different tables, but the column counts must match.
 
-**Locked State:**
+
 ![Docking Bay - Locked](static/images/docking_bay_locked.jpeg)
 
-**Access Granted:**
 ![Docking Bay - Access Granted](static/images/docking_bay_open.jpeg)
 
 ### Learning Resources
