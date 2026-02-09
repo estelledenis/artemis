@@ -69,7 +69,7 @@ XXXXXXXX{XXXX-XXXXXX-####}
 ### Setup & Running
 How to set up and run this specific challenge:
 - Navigate to directory
-- Initialize database: python init_db.py
+- Initialize database: python3 init_db.py
 - Run: python app.py
 - Access: http://127.0.0.1:5000/docking
 
@@ -102,10 +102,22 @@ You need to exploit this maintenance log system in order to gain admin access an
 ### Vulnerability Type
 Cross-Site Scripting (XSS)
 
-### Status
-🚧 In Development
+### Difficulty
+Beginner-Intermediate
 
----
+### Flag Format
+XXXXXXXX{XXXX-XXXXXX-####}
+
+### Setup & Running
+How to set up and run this specific challenge:
+- Ensure Challenge 1 is complete!
+- Run: python app.py
+- Access: http://127.0.0.1:5000/life_support
+
+### Hints
+- 
+
+
 
 ## Challenge 3: Research Database - [Coming Soon]
 
