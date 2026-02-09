@@ -23,7 +23,7 @@
 
 </div>
 
-
+![Artemis Station - Home Page](static/images/artemis_station.png)
 
 ### Project Overview
 Artemis is a deep-space station that's gone dark. In this Capture The Flag challenge, you will navigate the Artmemis Station and uncover what happened to Artemis by completing 6 challenges, each exploiting a different vulnerability within the station.
