@@ -33,10 +33,6 @@ Artmemis Station, a deep-space research facility, was once the hub for humanity'
 
 You are part of a security team tasked with regaining control of the station. You need to hack through the station's security protocols to discover what happened and restore the facility.
 
-### Challenge Map
-Visual/text representation of how challenges connect:
-- Docking Bay (entry point) → branches to other modules → final AI Core
-
 ---
 
 ## Challenge 1: Docking Bay - Authentication Breach
