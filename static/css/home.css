@@ -1,0 +1,195 @@
+/* Home page background */
+.home-body {
+    background-image: url('/static/images/artemis_station.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Dark overlay for readability */
+.home-body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+/* Main container */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Station title */
+.station-title {
+    font-size: 48px;
+    color: #0ff;
+    text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+}
+
+
+/* Challenge grid */
+.challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 100px;
+}
+
+/* Challenge cards */
+.challenge-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid #0ff;
+    padding: 25px;
+    text-align: left;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.challenge-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+/* Locked challenges */
+.challenge-card.locked {
+    border-color: #666;
+    opacity: 0.6;
+}
+
+.challenge-card.locked:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Challenge header */
+.challenge-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #0ff;
+    padding-bottom: 10px;
+}
+
+.challenge-card.locked .challenge-header {
+    border-bottom-color: #666;
+}
+
+.challenge-card h2 {
+    color: #0ff;
+    font-size: 20px;
+    margin: 0;
+}
+
+.challenge-card.locked h2 {
+    color: #666;
+}
+
+/* Difficulty badges */
+.difficulty {
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.difficulty.beginner {
+    background: rgba(0, 255, 0, 0.2);
+    color: #0f0;
+    border: 1px solid #0f0;
+}
+
+.difficulty.intermediate {
+    background: rgba(255, 255, 0, 0.2);
+    color: #ff0;
+    border: 1px solid #ff0;
+}
+
+.difficulty.advanced {
+    background: rgba(255, 165, 0, 0.2);
+    color: #ffa500;
+    border: 1px solid #ffa500;
+}
+
+.difficulty.expert {
+    background: rgba(255, 0, 0, 0.2);
+    color: #f00;
+    border: 1px solid #f00;
+}
+
+/* Challenge description */
+.challenge-desc {
+    color: #0ff;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.challenge-card.locked .challenge-desc {
+    color: #666;
+}
+
+.challenge-tech {
+    color: #0ff;
+    font-size: 12px;
+    opacity: 0.7;
+    margin: 10px 0 20px 0;
+    font-style: italic;
+}
+
+.challenge-card.locked .challenge-tech {
+    color: #666;
+}
+
+/* Challenge button */
+.challenge-card > a {
+    display: block;
+    text-align: center;
+}
+
+.challenge-button {
+    display: inline-block;
+    width: auto;
+    padding: 12px 40px;
+    background: transparent;
+    border: 2px solid #0ff;
+    color: #0ff;
+    text-align: center;
+    text-decoration: none;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.challenge-button:hover {
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+/* Coming soon overlay */
+.coming-soon {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+    padding: 12px;
+    background: rgba(102, 102, 102, 0.9);
+    border: 2px solid #666;
+    color: #ccc;
+    text-align: center;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    font-weight: bold;
+}

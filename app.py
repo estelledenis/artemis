@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Welcome to Artemis Station"
+    return render_template('index.html')
 
 
 # Challenge 1 - Docking Bay Crew Search - Vulnerable to SQL Injection

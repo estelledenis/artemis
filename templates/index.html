@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Artemis Station CTF</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body class="home-body">
+    <div class="home-container">
+        <!-- Main Title -->
+        <h1 class="station-title">ARTEMIS STATION<span class="cursor">_</span></h1>        
+
+        <!-- Challenge Grid -->
+        <div class="challenges-grid">
+            <!-- Challenge 1: Docking Bay -->
+            <div class="challenge-card available">
+                <div class="challenge-header">
+                    <h2>01: DOCKING BAY</h2>
+                    <span class="difficulty beginner">BEGINNER</span>
+                </div>
+                <p class="challenge-desc">Breach the sealed airlock using the crew manifest terminal in the docking bay.</p>
+                <p class="challenge-tech">SQL Injection • Database Enumeration</p>
+                <a href="/docking" class="challenge-button">ENTER MODULE</a>
+            </div>
+
+            <!-- Challenge 2: Life Support -->
+            <div class="challenge-card available">
+                <div class="challenge-header">
+                    <h2>02: LIFE SUPPORT</h2>
+                    <span class="difficulty intermediate">INTERMEDIATE</span>
+                </div>
+                <p class="challenge-desc">Restore oxygen systems by exploiting the maintenance log interface.</p>
+                <p class="challenge-tech">Stored XSS • Admin Session Hijacking</p>
+                <a href="/life_support" class="challenge-button">ENTER MODULE</a>
+            </div>
+
+            <!-- Challenge 3: Research Database - Coming Soon -->
+            <div class="challenge-card locked">
+                <div class="challenge-header">
+                    <h2>03: RESEARCH DATABASE</h2>
+                    <span class="difficulty intermediate">INTERMEDIATE</span>
+                </div>
+                <p class="challenge-desc">Access classified research files through internal network vulnerabilities.</p>
+                <p class="challenge-tech">SSRF • Internal API Exploitation • Data Exfiltration</p>
+                <div class="coming-soon">COMING SOON</div>
+            </div>
+
+            <!-- Challenge 4: Encrypted Communications - Coming Soon -->
+            <div class="challenge-card locked">
+                <div class="challenge-header">
+                    <h2>04: ENCRYPTED COMMUNICATIONS</h2>
+                    <span class="difficulty advanced">ADVANCED</span>
+                </div>
+                <p class="challenge-desc">Decrypt intercepted transmissions to reveal the AI's true intentions.</p>
+                <p class="challenge-tech">Cryptanalysis • Cipher Breaking • Pattern Recognition</p>
+                <div class="coming-soon">COMING SOON</div>
+            </div>
+
+            <!-- Challenge 5: Maintenance Bay - Coming Soon -->
+            <div class="challenge-card locked">
+                <div class="challenge-header">
+                    <h2>05: MAINTENANCE BAY</h2>
+                    <span class="difficulty advanced">ADVANCED</span>
+                </div>
+                <p class="challenge-desc">Investigate corrupted system logs to uncover hidden evidence.</p>
+                <p class="challenge-tech">Digital Forensics • Log Analysis • Evidence Recovery</p>
+                <div class="coming-soon">COMING SOON</div>
+            </div>
+
+            <!-- Challenge 6: AI Core - Coming Soon -->
+            <div class="challenge-card locked">
+                <div class="challenge-header">
+                    <h2>06: AI CORE</h2>
+                    <span class="difficulty expert">EXPERT</span>
+                </div>
+                <p class="challenge-desc">Confront Sigma in the central AI core and regain station control.</p>
+                <p class="challenge-tech">Multi-Stage Exploitation • Chain Attack • Final Integration</p>
+                <div class="coming-soon">COMING SOON</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
