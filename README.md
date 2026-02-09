@@ -119,6 +119,12 @@ How to set up and run this specific challenge:
 - JavaScript can be embedded in maintenance log entries
 - When admins review logs at `/admin_panel`, your code executes in their browser
 
+![Life Support - Failing](static/images/life_support.jpeg)
+
+![Life Support - Maintenance Logs](static/images/life_support_logs.jpeg)
+
+![Life Support - Restored](static/images/life_support_success.jpeg)
+
 ## Challenge 3: Research Database - [Coming Soon]
 
 ### Story
