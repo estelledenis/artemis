@@ -103,7 +103,7 @@ You need to exploit this maintenance log system in order to gain admin access an
 Cross-Site Scripting (XSS)
 
 ### Difficulty
-Beginner-Intermediate
+Intermediate
 
 ### Flag Format
 XXXXXXXX{XXXX-XXXXXX-#####}
@@ -115,9 +115,9 @@ How to set up and run this specific challenge:
 - Access: http://127.0.0.1:5000/life_support
 
 ### Hints
-- 
-
-
+- The log submission system accepts ANY input without sanitization
+- JavaScript can be embedded in maintenance log entries
+- When admins review logs at `/admin_panel`, your code executes in their browser
 
 ## Challenge 3: Research Database - [Coming Soon]
 
