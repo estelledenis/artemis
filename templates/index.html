@@ -79,5 +79,21 @@
             </div>
         </div>
     </div>
+    <script>
+    const title = document.querySelector('.station-title');
+    const text = 'ARTEMIS STATION';
+    title.textContent = '';  // Clear the text
+    
+    let index = 0;
+    function typeWriter() {
+        if (index < text.length) {
+            title.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100);  // 100ms per character
+        }
+    }
+    
+    typeWriter();
+</script>
 </body>
 </html>

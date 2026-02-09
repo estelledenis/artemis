@@ -30,12 +30,14 @@
 }
 
 /* Station title */
+/* Typing animation for title */
 .station-title {
     font-size: 48px;
     color: #0ff;
     text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
     letter-spacing: 8px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 
