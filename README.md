@@ -91,6 +91,7 @@ How to set up and run this specific challenge:
 
 ### Learning Resources
 https://owasp.org/www-community/attacks/SQL_Injection
+
 https://portswigger.net/web-security/learning-paths/sql-injection
 
 ## Challenge 2: Life Support Module
