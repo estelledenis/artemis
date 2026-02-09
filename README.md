@@ -196,22 +196,6 @@ artemis-ctf/
 Prerequisites
 Step-by-step install guide
 
-## Roadmap
-
-Your development timeline:
-- ✅ Phase 1: Docking Bay (SQL Injection)
-- 🚧 Phase 2: Life Support (XSS)  
-- 📋 Phase 3: Research Database (SSRF)
-- etc.
-
-## Learning Journey
-
-What was learned building this
-
-## Contributing / Feedback
-
-How people can provide feedback
-
 ## Author
 
 Estelle Denis
