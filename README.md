@@ -106,7 +106,7 @@ Cross-Site Scripting (XSS)
 Beginner-Intermediate
 
 ### Flag Format
-XXXXXXXX{XXXX-XXXXXX-####}
+XXXXXXXX{XXXX-XXXXXX-#####}
 
 ### Setup & Running
 How to set up and run this specific challenge:
